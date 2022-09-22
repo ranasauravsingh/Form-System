@@ -1,0 +1,33 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.container {
+	width: 1170px;
+	margin: 0px auto;
+}
+span {
+	color: red;
+	font-size: 12px;
+}
+input {
+	margin: 10px 5px;
+}
+
+th,
+td {
+	border: 2px solid black;
+	width: auto;
+	text-align: center;
+}
+.inputData,
+.searchData,
+.updateData {
+	margin: 15px 0px;
+}
+
+.inputData {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

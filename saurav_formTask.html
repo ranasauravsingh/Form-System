@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="./css/saurav_form.css" />
+
+<div class="container">
+	<div class="inputData">
+		<form id="product" action="">
+			<h2>Product Details</h2>
+			<input
+				type="text"
+				id="productName"
+				onkeyup="check(this.value,'validateProdName', 'Product Name')"
+				placeholder="Enter Product Name"
+			/>
+			<span id="validateProdName"></span>
+			<br />
+			<input
+				type="number"
+				id="productPrice"
+				onkeyup="check(this.value,'validateProdPrice', 'Product Price')"
+				placeholder="Enter Product Price"
+			/>
+			<span id="validateProdPrice"></span>
+			<br />
+
+			<input type="button" value="Add" onclick="insert()" />
+			<input type="reset" value="Clear" />
+			<input type="button" value="View" onclick=" view()" />
+		</form>
+		<table id="productTable"></table>
+	</div>
+
+	<div class="searchData">
+		<form id="searchForm" action="">
+			<h3>Search Details</h3>
+			<input
+				type="number"
+				id="searchId"
+				placeholder="Enter Product Id"
+				onkeyup="check(this.value,'validateProdId', 'Product Id')"
+			/>
+			<span id="validateProdId"></span>
+			<br />
+			<input type="button" value="Search" onclick="search()" />
+			<input type="reset" value="Clear" />
+		</form>
+	</div>
+
+	<div class="updateData">
+		<form id="updateForm" action="">
+			<h3>Update Details</h3>
+			<input
+				type="number"
+				id="updateId"
+				placeholder="Enter Product Id"
+				onkeyup="check(this.value,'validateUpdateId', 'Product Id')"
+			/>
+			<span id="validateUpdateId"></span>
+			<br />
+			<input
+				type="text"
+				id="updateOldName"
+				placeholder="Enter Old Name"
+				onkeyup="check(this.value,'validateUpdateOldName', 'Old Name')"
+			/>
+			<span id="validateUpdateOldName"></span>
+			<br />
+
+			<input
+				type="text"
+				id="updateNewName"
+				placeholder="Enter New Name"
+				onkeyup="check(this.value,'validateUpdateNewName', 'New Name')"
+			/>
+			<span id="validateUpdateNewName"></span>
+			<br />
+
+			<input type="button" value="Update" onclick="update()" />
+			<input type="reset" value="Clear" />
+		</form>
+	</div>
+
+	<div class="deleteData">
+		<form id="deleteForm" action="">
+			<h3>Delete Details</h3>
+			<input
+				type="number"
+				id="deleteId"
+				placeholder="Enter Product Id"
+				onkeyup="check(this.value,'validateDeleteId', 'Product Id')"
+			/>
+			<span id="validateDeleteId"></span>
+			<br />
+			<input type="button" value="Delete" onclick="deleteData()" />
+			<input type="reset" value="Clear" />
+		</form>
+	</div>
+</div>
+
+<script src="./js/saurav_form.js"></script>
